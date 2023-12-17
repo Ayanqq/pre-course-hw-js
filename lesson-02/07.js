@@ -10,12 +10,14 @@ let passportMarried = {
 let passportMarriedCopy = {
     name: "Petr",
     surname: "Petrov",
-    married: true,
     address: {
         country: "USA",
         city: "Bobryisk"
     },
 };
+
+passportMarriedCopy = JSON.parse(JSON.stringify(passportMarried));
+passportMarriedCopy.married = true;
 
 console.log(passportMarried)
 console.log(passportMarriedCopy)
