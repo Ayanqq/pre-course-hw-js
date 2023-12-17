@@ -1,4 +1,4 @@
 let doArrow = (value) => {
     console.log(value)
 }
-doArrow('Передай 5')
+console.log(doArrow('Передай 5'))
